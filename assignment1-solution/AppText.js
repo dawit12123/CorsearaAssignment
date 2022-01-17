@@ -10,7 +10,7 @@ function(){
     var List = str.split(",");
 
     $scope.message = $scope.lunchMenu;
-    $scope.give = function() {
+    $scope.MenuChecker = function() {
         var str = $scope.lunchMenu.split(",") ;
 
 
@@ -27,34 +27,22 @@ function(){
     }
 
         if(str.length > 3){
-            $scope.name = "Too much!";
+            $scope.message = "Too much!";
         }
         else if(str.length == 0  ){
 
-            $scope.name = "Please give us some menu item";
+            $scope.message = "Please give us some menu item";
 
         }
         else  {
-            $scope.name = "Enjoy!";
+            $scope.message = "Enjoy!";
 
         }
 
-    }
+    } ;
 
-    $scope.Checker =  function (){
 
-       /*
-    if(List.length <= 3 && List.length > 0){
-        $scope.message = "Enjoy!"";
 
-    }
-    else if(List.length == 0) {
-                 $scope.message = "Please Enter value"";
-    }
-    else{
-        $scope.message = "Too much";
-    }*/
-};
 
 
    } );
